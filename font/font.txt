@@ -1,0 +1,13 @@
+for style graffitte:
+-
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Rock Salt', cursive;
+
+
+
+---------
+for texto, paragraph etc:
+-
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Staatliches', sans-serif;
+font-family: 'Bebas Neue', sans-serif;

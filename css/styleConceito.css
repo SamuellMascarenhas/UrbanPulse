@@ -1,0 +1,382 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../img/backgroundtexture/background1.jpeg');
+  background-size: cover;
+}
+
+main {
+  width: 720px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.linha {
+  padding: 5px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.slide-sup {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+  border-bottom: 1px solid #585858;
+}
+
+.slide-sup h4 {
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  z-index: 2;
+}
+
+.slide {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.slide .cupom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slide h3 {
+  background-color: #fff;
+  width: 80px;
+  padding: 5px;
+  border-radius: 15px;
+  color: #000;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+}
+
+header {
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, transparent 15px, #fff 0);
+  clip-path: polygon(0 15px, 15px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-sup {
+  background-color: #000;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo1 h1 {
+  color: #fff;
+  font-size: 10px;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 100;
+  font-weight: 100;
+}
+
+.card-redes {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 10px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.header-sub {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logoImg img {
+  width: 150px;
+}
+
+.nav-bar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.nav-bar li {
+  list-style: none;
+  margin: 10px;
+}
+
+.nav-bar a {
+  background-color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 10px 30px;
+  border: 1px solid #000;
+
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+}
+
+.nav-bar a:hover {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.nav-bar a:active {
+  transform: translateY(-3px);
+}
+
+.nav-bar a::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.nav-bar a:hover::after {
+  background-color: rgb(243, 243, 243);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+.input-container {
+  width: 420px;
+  position: relative;
+  margin: auto;
+}
+
+.icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+  font-family: 'Bebas Neue', sans-serif;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px rgb(255, 255, 255);
+}
+
+.input-container:hover>.icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+
+.conceito {
+  background-color: #fff;
+
+}
+
+.title-conceito {
+  text-align: center;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Rock Salt', cursive;
+  font-size: 30px;
+}
+
+.conteudo-conceito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.conteudo-conceito h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.conteudo-conceito p {
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 100;
+  width: 70%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box-con-1 {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center
+}
+
+.box-con-1 h3 {
+  margin-bottom: 10px;
+  width: 580px;
+  text-align: center;
+}
+
+.box-con-1 ul {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  width: 600px;
+}
+
+.box-con-1 li {
+  margin: 8px auto;
+}
