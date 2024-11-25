@@ -649,7 +649,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: #f2f2f2;
+  background: #000;
+  border: solid 1px #2e2e2e;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -932,7 +933,7 @@ footer {
   }
   .creditos-footer h3, .creditos-footer p{
   color: #fcfcfc;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 100;
   font-size: 15px;
   }

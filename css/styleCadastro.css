@@ -749,13 +749,12 @@ footer {
   border-radius: 10px;
 }
 
-.creditos-footer h3,
-p {
+.creditos-footer h3, .creditos-footer p{
   color: #fcfcfc;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 100;
   font-size: 15px;
-}
+  }
 
 .social-button {
   display: flex;

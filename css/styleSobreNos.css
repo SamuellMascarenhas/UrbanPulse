@@ -13,6 +13,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #fff;
+}
 
 .linha {
   padding: 5px;
@@ -356,9 +359,63 @@ header {
   }
 }
 
+/* estilos main */
 
 
+/* Conteúdo Principal */
+.title-conceito {
+  font-size: 48px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+}
+main {
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+  font-family: 'Jost', sans-serif;
+}
 
+main section {
+  margin-bottom: 40px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #000;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  font-family: 'Jost', sans-serif;
+}
+
+main h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #111111;
+}
+
+main p {
+  font-family: 'Jost', sans-serif;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+main ul {
+
+  list-style: disc;
+  color: #000;
+  margin-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+
+/* fim estilos main */
 
 
 
@@ -491,13 +548,12 @@ footer {
   border-radius: 10px;
 }
 
-.creditos-footer h3,
-p {
+.creditos-footer h3, .creditos-footer p{
   color: #fcfcfc;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 100;
   font-size: 15px;
-}
+  }
 
 .social-button {
   display: flex;
